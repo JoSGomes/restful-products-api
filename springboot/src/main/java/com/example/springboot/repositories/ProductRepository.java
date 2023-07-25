@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+//Paginação é possível através do extends de PagingAndSortingRepository.
 @Repository
 public interface ProductRepository extends JpaRepository<ProductModel, UUID> {
     @Query("FROM ProductModel pm " +
